@@ -1,0 +1,97 @@
+/* Page background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #C5DBC4;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  color: #CCD5AE;
+}
+
+/* Main container that holds the canvas and side panel */
+#app {
+  background-color: rgba(228, 244, 227, 0.9); 
+  border-radius: 24px;
+  padding: 20px 30px;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Canvas itself */
+canvas {
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* UI panel */
+.ui-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 240px;
+}
+
+/* Panel box (transparent rounded background for each group) */
+.panel-box {
+  background-color: rgba(228, 244, 227, 0.8);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Button row */
+.ui-panel .row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #CCD5AE;
+  color: #09190D;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #aab791;
+  color: #fff;
+}
+
+button.active {
+  background: #89a173;
+  color: #fff;
+}
+
+/* Labels for sliders */
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  display: block;
+  color: #09190D;
+}
+
+/* Sliders */
+input[type=range] {
+  width: 100%;
+}
+
+/* Keys help text */
+.keys-help {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #09190D;
+}
